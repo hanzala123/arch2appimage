@@ -1,0 +1,4 @@
+inquirer==2.10.0
+requests==2.28.1
+rich==12.5.1
+zstandard==0.18.0
