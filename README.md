@@ -107,11 +107,6 @@ Distributed under the GPL3 License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CONTACT -->
-## Contact
-
-Hanzala Ibn Zahid - hanzalarushnan@gmail.com
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
