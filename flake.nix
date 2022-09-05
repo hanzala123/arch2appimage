@@ -40,6 +40,11 @@
         nativeBuildInputs = [
           myPython
         ];
+        buildInputs = [
+          pkgs.appimagekit
+          pkgs.zsync
+          pkgs.desktop-file-utils
+        ];
       };
     }
   );
