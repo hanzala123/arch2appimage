@@ -2,7 +2,7 @@
   description = "This is a python script that downloads Arch Linux packages (Official/Chaotic AUR) and converts to an AppImage executable";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs-22.05";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
     # This section will allow us to create a python environment
@@ -13,7 +13,7 @@
       inputs.mach-nix.follows = "mach-nix";
     };
     mach-nix = {
-      url = "github:DavHau/mach-nix/3.3.0";
+      url = "github:DavHau/mach-nix/3.5.0";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.pypi-deps-db.follows = "pypi-deps-db";
@@ -33,7 +33,7 @@
         # specify the base version of python you with to use
         python = "python39";
 
-        requirements = pkgs.readFile ./requirements.txt;
+        requirements = pkgs.lib.readFile ./requirements.txt;
       };
     in {
       devShell = pkgs.mkShell {
