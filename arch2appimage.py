@@ -223,7 +223,8 @@ while True:
                 utils.rm("download")
 
 
-appimagetool = os.path.join(RES_DIR, "appimagetool")
+# appimagetool = os.path.join(RES_DIR, "appimagetool")
+appimagetool = "appimagetool"
 
 if utils.user_confirm("Would you like to download the \
 latest AppImageTool? If you select No the existing one will be used."):
@@ -235,7 +236,7 @@ while True:
     if not os.path.exists(OUT_DIR):
         os.mkdir(OUT_DIR)
 
-    cmd = f"./{appimagetool} -n {APP_DIR} {OUT_DIR}/{main_pkg}-{ARCH}.AppImage"
+    cmd = f"{appimagetool} -n {APP_DIR} {OUT_DIR}/{main_pkg}-{ARCH}.AppImage"
     utils.run_cmd(cmd)
 
     time.sleep(5)
