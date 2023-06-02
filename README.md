@@ -7,7 +7,9 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
+## Deprecation Notice
 
+After having lots of stability issues with arch linux I moved to Ubuntu. My initial plan was to ditch the custom downloader and use pacman/yay to download/compile packages. But as I am not on arch anymore I will not be making any upgrades to the project. Thank you all for the support you have shown to the project.
 
 
 <!-- PROJECT SHIELDS -->
