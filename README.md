@@ -82,19 +82,30 @@ Use this `README.md` to get started.
 This project was written in python. To be able to run this you must have Python 3 installed. To install the required packages you also need to have pip installed.
 
 ### Installation
-1. Install the requirements
+
+1. Download repository
+
    ```sh
-   pip3 install -r requirements.txt
+   git clone https://github.com/imbev/arch2appimage.git && cd arch2appimage
    ```
+
+2. Install dependencies
+
+   ```sh
+   python3 -m pip install poetry && poetry install
+   ```
+
 This should be enough to run the program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
 To start the program simply run
+
    ```sh
-   python3 arch2appimage.py
+   poetry run python arch2appimage.py
    ```
 
 By default the script supports AUR. If you wish to disable that set `USE_AUR = False` in the `config.py` file.
